@@ -1,0 +1,122 @@
+ * {
+     margin: 0%;
+     padding: 0%;
+ }
+
+
+
+ nav {
+     text-decoration: underline;
+     text-align: center;
+     background-color: rgb(0, 0, 0);
+     color: white;
+     width: 100vw;
+     height: 8vh;
+ }
+
+ nav ul li {
+     font-size: 4vh;
+     list-style-type: none;
+     font-family: fantasy;
+ }
+
+ .gamecontainer {
+
+     background-color: purple;
+
+     height: 92vh;
+
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+
+ }
+
+ .container {
+     margin-top: 100px;
+     display: grid;
+     grid-template-rows: repeat(3, 8vw);
+     grid-template-columns: repeat(3, 8vw);
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .box {
+     border: 2px solid black;
+     font-size: 6vw;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+
+
+ }
+
+ .box:hover {
+     background-color: plum;
+
+ }
+
+ .gameInfo {
+     margin-top: 100px;
+     padding: 0 45px;
+ }
+
+ .info {
+     font-size: 4vw;
+     font-weight: 300;
+ }
+
+ .imgbox img {
+     width: 0;
+     transition: width 1s ease-in-out;
+ }
+
+ .bt-0 {
+     border-top: 0;
+ }
+
+ .bb-0 {
+     border-bottom: 0;
+ }
+
+ .bl-0 {
+     border-left: 0;
+ }
+
+ .br-0 {
+     border-right: 0;
+ }
+
+ #reset {
+     margin: 5px 5px;
+     padding: 5px 5px;
+     background-color: plum;
+     border-radius: 10px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 500;
+     font-size: larger;
+ }
+
+ @media screen and (max-width:1000px) {
+     .gamecontainer {
+
+         flex-direction: column;
+         align-content: flex-start;
+         justify-content: center;
+         align-items: center
+     }
+
+     .gameInfo {
+         margin-top: 20px;
+     }
+
+     .container {
+
+         grid-template-rows: repeat(3, 15vw);
+         grid-template-columns: repeat(3, 15vw);
+
+     }
+
+     .box {
+         font-size: 15vw;
+     }
+ 
